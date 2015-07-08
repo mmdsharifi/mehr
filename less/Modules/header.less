@@ -1,0 +1,19 @@
+.navbar-default{
+	background-color: darken(@body-bg , 10%);
+	.box-shadow(3px 6px 6px rgba(0,0,0,.45));
+	.navbar-brand,.navbar-nav>li>a{
+	color:#fff;
+	&:hover,&:focus{
+		color:darken(@brand-danger,40%); 
+	}
+	}
+	
+}
+.navbar{
+	border: none;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
+	background-color: darken(@body-bg , 15%);
+	color: #fff;
+	font-weight: bold;
+}
