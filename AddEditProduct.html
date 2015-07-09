@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>صفحه ویرایش و درج </title>
+ <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <![endif]-->
+  
+<link rel="stylesheet" href="dist/css/style.css">
+<link rel="stylesheet" href="dist/css/Site.css">
+<link rel="stylesheet" href="dist/css/font-awesome.css">
+<link rel="stylesheet" href="dist/css/fileinput.min.css">
+
+</head>
+
+<body>
+
+     <nav class="navbar navbar-default">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="Img/logo.png" alt="" class="img-responsive" height="85" width="200">
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </form>
+             <ul class="nav navbar-nav navbar-right">
+               
+                <li>
+                 <div class="btn-group">
+                      <button class="btn btn-success">
+                    <span class="glyphicon glyphicon-shopping-cart"></span>
+                     <button class="btn btn-success">
+                    <span class="glyphicon glyphicon-cog"></span>
+                  </button>
+                  </button>
+                 </div>
+                 
+                </li>
+               
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+   
+   <div class="container" style="margin-top:20px;">
+     <div class="panel panel-success">
+				<div class="panel-heading">
+                    <h4>        افزودن کالا
+
+                 </h4>
+                  </div>
+         <div class="panel-body">
+              <div class="row">
+             <div class="col-md-10">
+           <form accept-charset="UTF-8" role="form">
+                    <fieldset>
+			    	  <div class="form-group">
+       
+           		      <label for="productName"  class="col-md-2 control-label">نام کالا
+           		      </label>
+            		    <div class="col-md-10">
+            		         <input id="productName" class="form-control"  
+			    		     type="text">
+           		              validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+        
+           		     <label for="productPrice"  class="col-md-2 control-label">قیمت
+           		     </label>
+            		    <div class="col-md-10">
+            		         <input id="productPrice" class="form-control" 
+			    		     type="text">
+           		            validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+            		        <label for="availableCount"  class="col-md-2 control-label">
+            		        تعداد موجود</label>
+            		    <div class="col-md-10">
+            		         <input id="availableCount" class="form-control" 
+			    		     type="text">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+            		        <label for="submitedCount"  class="col-md-2 control-label">
+            		            تعداد ارسال شده
+            		        </label>
+            		    <div class="col-md-10">
+            		         <input id="submitedCount" class="form-control" 
+			    		    name="email" type="text">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+          <label for="productDescription"  class="col-md-2 control-label">
+            		            توضیحات کالا
+            		        </label>
+            		    <div class="col-md-10">
+            		         <input id="productDescription" class="form-control" 
+			    		    type="text">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		
+			    		<div class="form-group">
+         <label for="qualityDescription"  class="col-md-2 control-label">
+            		            توضیحات کیفیت 
+            		        </label>
+            		    <div class="col-md-10">
+            		         <input id="qualityDescription" class="form-control" 
+			    		    type="text">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		
+			    		<div class="form-group">
+                   <label for="productScope"  class="col-md-2 control-label">
+            		           محدوده - یا چی؟
+            		        </label>
+            		    <div class="col-md-10">
+            		         <input id="productScope" class="form-control" 
+			    		    type="text">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		
+			    		
+			    		<div class="form-group">
+            		   <label for="productMainPic"  class="col-md-2 control-label">
+            		            تصویر اصلی
+            		        </label>
+            		    <div dir="ltr" class="col-md-10">
+            		         <input id="productMainPic"  accept="image/*"
+			    		    type="file">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			     <div  class="form-group">
+                  <label for="productGalleryPics" class="col-md-2 control-label">
+            		            تصاویر گالری 
+            		        </label>
+            		    <div dir="ltr" class="col-md-10">
+           		         
+            		       <input id="productGalleryPics" multiple  accept="image/*"
+			    		    type="file">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		</fieldset>
+              	
+			      	</form>
+			    		</div>
+			    		
+			    	
+         </div>
+          </div>
+         <div class="panel-footer">
+              <input type="submit" value="ذخیره تغییرات" 
+         class="btn btn-success btn-md btn-block">
+			   <a href="#" class="btn btn-md btn-info btn-block">انصراف</a>
+         
+			    
+       </div>
+       </div>
+
+  </div>
+   
+    <div class="top__footer">
+      <span class="container ">
+          <h5 class="text-center"> شماره پشتیبانی شرکت : 12545454 </h5>
+      </span>
+    </div>
+     <footer class="main-footer">
+        <div class="row center-block container">
+          <div class="col-md-3">
+            <h4>فروشنگان برتر</h4>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+          </div>
+          <div class="col-md-3">
+            <h4>فروشنگان برتر</h4>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+          </div>
+          <div class="col-md-3">
+            <h4>فروشنگان برتر</h4>
+           <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+          </div>
+          <div class="col-md-3">
+            <h4>فروشنگان برتر</h4>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+            <li><a href="">علی ربال</a> </li>
+          </div>
+      </footer>
+		
+    <script src="dist/js/jquery-1.10.2.min.js"></script>
+     <script src="dist/js/bootstrap.min.js"></script>
+      <script src="dist/js/fileinput.min.js"></script>
+      <script src="dist/js/site.js"></script>
+       <script>
+    $(function(){
+        Mange.fileUpload("productMainPic",1000,1);
+        Mange.fileUpload("productGalleryPics",6000,6);
+    });
+
+</script>
+</body>
+
+
+</html>
