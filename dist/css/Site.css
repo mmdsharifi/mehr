@@ -50,4 +50,7 @@ input, textarea, select {
 font-size: 2em;
 }
 
-
+hr.customLine{
+    
+ marging:5px;   
+}
