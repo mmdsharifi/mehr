@@ -7,6 +7,7 @@
 // --------------------------------------------------
 
 .btn {
+  transition: .3s all;
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: @btn-font-weight;
@@ -18,7 +19,7 @@
   white-space: nowrap;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
   .user-select(none);
-
+  
   &:focus {
     .tab-focus();
   }
@@ -60,6 +61,7 @@
 .btn-warning {
   .button-variant(@btn-warning-color; @btn-warning-bg; @btn-warning-border);
 }
+
 // Danger and error appear as red
 .btn-danger {
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
