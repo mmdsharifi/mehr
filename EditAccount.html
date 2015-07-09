@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-  
   <head>
     <meta charset="UTF-8">
     <title>صفحه آغازین</title>
@@ -57,7 +56,99 @@
        <div class="container" >
       <div class="row">
         
-        <!-- content -->
+       <div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-success">
+				<div class="panel-heading">
+				 <figure > 
+                     <img src="Img/download.png"
+                      class="img-responsive" width="70" height="70" 
+                      alt="alternative"> 
+                    <figcaption>
+                    <strong>
+                         حسن حسن علی
+                    </strong>
+                   </figcaption>
+                  </figure>
+				</div>
+				<div class="panel-body">
+				 <fieldset>
+			    	  	<div class="form-group">
+            		        <label for="email"  class="col-md-2 control-label">پست الکترونیک</label>
+            		    <div class="col-md-10">
+            		         <input id="email" class="form-control" placeholder="پست الکترونیک" 
+			    		    name="email" type="text">
+           		    validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+            		        		        <label for="password" class="col-md-2 
+            		        		        control-label">کلمه عبور</label>
+            		    <div class="col-md-10">
+            		        <input class="form-control" placeholder="کلمه عبور"    
+			    			id="password" type="password" >
+           		     validation place
+            		    </div>
+			    			
+			    		</div>
+			    		<div class="form-group">
+            		        <label for="faceBookUrl" class="col-md-2 control-label">آدرس فیسبوک</label>
+            		    <div class="col-md-10">
+            		         <input class="form-control" placeholder="آدرس فیسبوک" 
+			    		    id="faceBookUrl" type="url">
+           		     validation place
+            		    </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+            		        <label for="twitterUrl" class="col-md-2 control-label">آدرس توئیتر</label>
+			    		    <div class="col-md-10">
+			    		         <input class="form-control" placeholder="آدرس توئیتر" 
+			    		    id="twitterUrl" type="url">
+			    		     validation place
+			    		    </div>
+			    		</div>
+			    		<div class="form-group">
+            		        <label for="linkedInUrl" class="col-md-2 control-label">آدرس لینکدین</label>
+            		      <div  class="col-md-10">
+            		           <input class="form-control" placeholder="آدرس لینکدین" 
+			    		    id="linkedInUrl" type="url">
+           		       validation place
+            		      </div>
+			    		   
+			    		</div>
+			    		<div class="form-group">
+			    		    <label for="profilePic" class="col-md-2 control-label">
+			    		        تصویر پروفایل
+			    		    </label>
+			    		    <div dir="ltr" class="col-md-10">
+			    		        <input  id="profilePic" type="file" 
+			    		        accept="image/*" >
+<hr>
+			    		    </div>
+			    		</div> 
+			    		<div class="form-group" >
+			    		    <label for="wallPic" class="col-md-2 control-label">
+			    		        تصویر بنر
+			    		    </label>
+			    		    <div dir="ltr" class="col-md-10">
+			    		        <input id="wallPic"  type="file" 
+			    		        accept="image/*" >
+			    		    </div>
+			    		</div> 
+			    	</fieldset>
+				</div>
+				<div class="panel-footer">
+			    	        <input class="btn btn-md btn-success btn-block" type="submit" 
+			    	        value="  
+			    	       ثبت">
+			   <a href="index.html" class="btn btn-md btn-default btn-block" >
+                              
+                             انصراف
+                           </a>
+				</div>
+			</div>
+		</div>
         
       </div>
     </div>
@@ -99,6 +190,40 @@
       </footer>
     <script src="dist/js/jquery-1.10.2.min.js"></script>
      <script src="dist/js/bootstrap.min.js"></script>
-  </body>
+       <script>
+    $(function(){
+    $("#profilePic,#wallPic").fileinput({
+         showUpload: false,
+        previewFileType: "image",
+        browseClass: "btn btn-success btn-md",
+       captionClass:"input-sm",
+        browseLabel: "انتخاب",
+        browseIcon: '<i class="fa fa-picture-o"></i>',
+        removeClass: "btn  btn-danger btn-md",
+        removeLabel: "حذف",
+        maxFileSize: 1000,
+        removeIcon: '<i class="fa fa-trash"></i>',
+        uploadClass: "btn btn-success",
+        uploadLabel: "ارسال به سرور",
+        allowedFileExtensions: ['jpg', 'gif', 'png', 'jpeg'],
+        msgInvalidFileType: "از تصاویر فقط استفاده کنید",
+        msgInvalidFileExtension: "از فایل های مجاز استفاده کنید[jpg,jpeg,png,gif]",
+        msgSizeTooLarge: "شما قادر به ارسال 1 مگا بایت فایل میباشید",
+        uploadIcon: '<i class="fa fa-upload"></i>',
+        layoutTemplates: {
+        main1: "{preview}\n" +
+        "<div class=\'input-group {class}\'>\n" +
+        "   <div class=\'input-group-btn\'>\n" +
+        "       {browse}\n" +
+        "       {upload}\n" +
+        "       {remove}\n" +
+        "   </div>\n" +
+        "   {caption}\n" +
+        "</div>"
+    }
 
-</html>
+    });
+    });
+       </script>
+  </body>
+  </html>

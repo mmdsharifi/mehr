@@ -9,7 +9,9 @@
 select {
     width: 100% !important;
 }
-
+html {
+    font-size: 0.99em;
+}
 
 body {
     background-color: white !important;
@@ -27,6 +29,10 @@ td {
     font-size: .96em !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'wYekan' !important;
+}
+
 input, textarea, select {
     max-width: 100% !important;
 }
@@ -39,20 +45,9 @@ input, textarea, select {
 }
 
 
-figcaption{
-    font-size: 2em;
-}
-
-label{
-font-size: 1.4em;
-}
 
 .font2{
 font-size: 2em;
 }
 
-li,ul{
-    
- font-size: 1.2em;   
-}
 
