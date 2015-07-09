@@ -1,0 +1,66 @@
+
+@font-face {
+    font-family: 'wYekan';
+    src: url('../fonts/wYekan.eot?#') format('eot'), /* IE6–8 */
+    url('../fonts/wYekan.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/wYekan.ttf') format('truetype'); /* Saf3—5, Chrome4+, FF3.5, Opera 10+ */
+}
+
+select {
+    width: 100% !important;
+}
+
+
+body {
+    background-color: white !important;
+    max-width: 100% !important;
+    font-family: 'wYekan' !important;
+    font-size: 100% !important;
+}
+
+.marginLeftRight{
+    
+    margin-left: 50px;
+    margin-right: 50px;
+}
+td {
+    font-size: .96em !important;
+}
+
+
+
+
+
+
+
+
+
+input, textarea, select {
+    max-width: 100% !important;
+}
+
+// Class
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+figcaption{
+    font-size: 2em;
+}
+
+label{
+font-size: 1.4em;
+}
+
+.font2{
+font-size: 2em;
+}
+
+li,ul{
+    
+ font-size: 1.2em;   
+}
+
