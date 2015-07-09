@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>صفحه آغازین</title>
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="dist/css/Site.css">
-  </head>
-  
-  <body>
-   
-        <nav class="navbar navbar-default">
+<head>
+<meta charset="UTF-8">
+<title>ویرایش مشخصات</title>
+<!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <![endif]-->
+<link rel="stylesheet" href="dist/css/style.css">
+<link rel="stylesheet" href="dist/css/Site.css">
+<link rel="stylesheet" href="dist/css/font-awesome.css">
+<link rel="stylesheet" href="dist/css/fileinput.min.css">
+</head>
+
+<body>
+
+     <nav class="navbar navbar-default">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -53,10 +55,9 @@
           </div>
           <!-- /.container-fluid -->
         </nav>
-       <div class="container" >
-      <div class="row">
-        
-       <div class="col-md-10 col-md-offset-1">
+     <div class="container" style="margin-top:10px;">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-success">
 				<div class="panel-heading">
 				 <figure > 
@@ -149,10 +150,9 @@
 				</div>
 			</div>
 		</div>
-        
-      </div>
-    </div>
-    <div class="top__footer">
+	</div>
+</div>
+      <div class="top__footer">
       <span class="container ">
           <h5 class="text-center"> شماره پشتیبانی شرکت : 12545454 </h5>
       </span>
@@ -192,6 +192,7 @@
      <script src="dist/js/bootstrap.min.js"></script>
        <script>
     $(function(){
+        
     $("#profilePic,#wallPic").fileinput({
          showUpload: false,
         previewFileType: "image",
@@ -220,10 +221,10 @@
         "   </div>\n" +
         "   {caption}\n" +
         "</div>"
-    }
+        }
+    });
+});
 
-    });
-    });
-       </script>
-  </body>
-  </html>
+</script>
+</body>
+</html>
