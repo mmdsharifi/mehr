@@ -80,3 +80,7 @@ hr.customLine{
   overflow:hidden;
   text-align:center;
 }
+
+.padding5{
+ padding: 5px !important;   
+}
