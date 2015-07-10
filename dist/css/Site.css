@@ -54,9 +54,6 @@ hr.customLine{
  marging:5px;   
 }
 
-body {
-  padding-top: 50px;
-}
 
 .wide {
   width:100%;
@@ -82,4 +79,8 @@ body {
   white-space:no-wrap;
   overflow:hidden;
   text-align:center;
+}
+
+.padding5{
+ padding: 5px !important;   
 }

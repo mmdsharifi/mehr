@@ -192,43 +192,17 @@
             <li><a href="">علی ربال</a> </li>
           </div>
       </footer>
-    <script src="dist/js/jquery-1.10.2.min.js"></script>
+      
+      
+     <script src="dist/js/jquery-1.10.2.min.js"></script>
      <script src="dist/js/bootstrap.min.js"></script>
       <script src="dist/js/fileinput.min.js"></script>
+      <script src="dist/js/site.js"></script>
        <script>
     $(function(){
-        
-    $("#profilePic,#wallPic").fileinput({
-         showUpload: false,
-        previewFileType: "image",
-        browseClass: "btn btn-success btn-md",
-       captionClass:"input-sm",
-        browseLabel: "انتخاب",
-        browseIcon: '<i class="fa fa-picture-o"></i>',
-        removeClass: "btn  btn-danger btn-md",
-        removeLabel: "حذف",
-        maxFileSize: 1000,
-        removeIcon: '<i class="fa fa-trash"></i>',
-        uploadClass: "btn btn-success",
-        uploadLabel: "ارسال به سرور",
-        allowedFileExtensions: ['jpg', 'gif', 'png', 'jpeg'],
-        msgInvalidFileType: "از تصاویر فقط استفاده کنید",
-        msgInvalidFileExtension: "از فایل های مجاز استفاده کنید[jpg,jpeg,png,gif]",
-        msgSizeTooLarge: "شما قادر به ارسال 1 مگا بایت فایل میباشید",
-        uploadIcon: '<i class="fa fa-upload"></i>',
-        layoutTemplates: {
-        main1: "{preview}\n" +
-        "<div class=\'input-group {class}\'>\n" +
-        "   <div class=\'input-group-btn\'>\n" +
-        "       {browse}\n" +
-        "       {upload}\n" +
-        "       {remove}\n" +
-        "   </div>\n" +
-        "   {caption}\n" +
-        "</div>"
-        }
+        Mange.fileUpload("profilePic",1000,1);
+        Mange.fileUpload("wallPic",1000,1);
     });
-});
 
 </script>
 </body>
